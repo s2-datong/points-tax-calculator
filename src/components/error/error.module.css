@@ -1,0 +1,18 @@
+.error-list {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: red;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.error-message {
+  background-color: rgba(235, 64, 52, 0.5);
+  color: #fff;
+  border-radius: 3px;
+  padding: 3px;
+}
+.error-message::before {
+  content: "⛑ "
+}
