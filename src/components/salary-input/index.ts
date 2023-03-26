@@ -1,0 +1,1 @@
+export { SalaryInput } from "./SalaryInput";
