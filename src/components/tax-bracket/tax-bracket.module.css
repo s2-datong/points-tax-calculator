@@ -1,0 +1,33 @@
+.tax-bracket-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tax-bracket {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.tax-bracket.selected {
+  color: #fff;
+  background: rgb(60,97,152);
+  background: radial-gradient(circle, rgba(60,97,152,1) 28%, rgba(9,93,121,1) 85%);
+}
+
+.tax-bracket > label {
+  font-size: 1.1em;
+}
+
+.tax-bracket > label > span {
+  display: block;
+  font-size: 1.3em;
+}
+
+.tax-bracket.selected > label:nth-child(3) > span::before {
+  content: "✅"
+}
